@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Charleston, SC: A Symphony of the Senses</title>  
+  <link rel="stylesheet" href="./styles/main.css">  
+  <meta name="description" content="Charleston through sight, sound, smell, taste, and touch. 40+ immersive topics.">  
+</head>  
+<body>  
+  <section class="sensory-panel" id="sight">  
+    <div class="drone-container">  
+      <iframe  
+        src="https://drive.google.com/file/d/1ZG3Qe7u7xw4gOZmX7y3QJz3t3Z3b3vZQ/preview"  
+        loading="lazy"  
+        allow="autoplay"  
+      ></iframe>  
+    </div>  
+    <h2>The Colors of Rainbow Row</h2>  
+    <p>Historic pastels analyzed by AI for HEX codes matching 1830s dyes...</p>  
+  </section>  
+
+  <section class="sensory-panel" id="sound">  
+    <audio id="ocean-ambience" src="./assets/audio/waves.mp3"></audio>  
+    <button class="sound-toggle" onclick="toggleSound('ocean')">  
+      ▷ Hear the Harbor  
+    </button>  
+  </section>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  
+  <script src="./scripts/app.js"></script>  
+</body>  
+</html>  

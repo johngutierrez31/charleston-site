@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {  
+  const oceanAudio = document.getElementById('ocean-ambience');  
+  let audioStarted = false;  
+
+  window.addEventListener('scroll', () => {  
+    if (!audioStarted) {  
+      oceanAudio.play().catch(() => {  
+        document.querySelector('.sound-toggle').style.display = 'block';  
+      });  
+      audioStarted = true;  
+    }  
+    oceanAudio.volume = Math.min(window.scrollY * 0.001, 0.7);  
+  });  
+
+  gsap.from(".sensory-panel", {  
+    opacity: 0,  
+    duration: 1.5,  
+    stagger: 0.3  
+  });  
+});  
